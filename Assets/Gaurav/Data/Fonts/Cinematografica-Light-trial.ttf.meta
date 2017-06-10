@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: b33713905f75ac24c8ba8fde4520a3ab
+timeCreated: 1497119261
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cinematografica
+  fontNames:
+  - Cinematografica
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 87a7311190eccb14f934afecd52f7c9f, type: 3}
+  - {fileID: 12800000, guid: 296438c3737dba64fbe0644e85d8e315, type: 3}
+  - {fileID: 12800000, guid: 1b99f255b81d4334fb021b33bf754761, type: 3}
+  - {fileID: 12800000, guid: a502dbf5ca745c94c862ab632f7f11f5, type: 3}
+  - {fileID: 12800000, guid: 95e3eedfa2961e84b9ff55d6ae5fa238, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
