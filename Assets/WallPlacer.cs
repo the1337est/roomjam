@@ -23,33 +23,35 @@ public class WallPlacer : MonoBehaviour
 
     private void Update()
     {
-
-        if (Input.GetMouseButtonDown(0))
+        if (GameManager.Instance.State == GameState.Edit)
         {
-            if (currentWall != null && IsEditing)
+            if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Pressed");
-                Walls.Add(currentWall);
-                currentWall = Instantiate(WallPrefab, transform).transform;
+                if (currentWall != null && IsEditing)
+                {
+                    Debug.Log("Pressed");
+                    Walls.Add(currentWall);
+                    currentWall = Instantiate(WallPrefab, transform).transform;
+                }
             }
-        }
 
-        float delta = Input.GetAxis("Mouse ScrollWheel") - lastValue;
-        if (delta != 0)
-        {
-            int direction = delta > 0 ? 1 : -1;
-            float angle = currentWall.localEulerAngles.y + 90f * direction;
-            currentWall.localEulerAngles = Vector3.up * angle;
-        }
-
-        RaycastHit hit;
-        if (Physics.Raycast(Cam.ScreenPointToRay(Input.mousePosition), out hit, 50f))
-        {
-            if (hit.transform.tag == "Base")
+            float delta = Input.GetAxis("Mouse ScrollWheel") - lastValue;
+            if (delta != 0)
             {
-                //Debug.Log("HIT" + hit.transform.name);
-                Vector3 pos = hit.point.ToWhole();
-                currentWall.position = pos;
+                int direction = delta > 0 ? 1 : -1;
+                float angle = currentWall.localEulerAngles.y + 90f * direction;
+                currentWall.localEulerAngles = Vector3.up * angle;
+            }
+
+            RaycastHit hit;
+            if (Physics.Raycast(Cam.ScreenPointToRay(Input.mousePosition), out hit, 50f))
+            {
+                if (hit.transform.tag == "Base")
+                {
+                    //Debug.Log("HIT" + hit.transform.name);
+                    Vector3 pos = hit.point.ToWhole();
+                    currentWall.position = pos;
+                }
             }
         }
     }

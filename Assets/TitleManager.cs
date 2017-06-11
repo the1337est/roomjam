@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class TitleManager : MonoBehaviour
+public class TitleManager : Singleton<TitleManager>
 {
 
     public Text Title;
     public Text Subtitle;
+    public Image Overlay;
 
 	// Use this for initialization
 	void Start ()
@@ -22,6 +23,10 @@ public class TitleManager : MonoBehaviour
             {
                 TitleShakeRandom();
                 SubtitleFadeRandom();
+                Overlay.DOColor(new Color(0, 0, 0, 0), 1f).SetDelay(1f).OnComplete(()=> 
+                {
+                    Overlay.gameObject.SetActive(false);
+                });
             });
         });
 

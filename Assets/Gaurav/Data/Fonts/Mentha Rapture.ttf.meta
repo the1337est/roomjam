@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: cfdbe1c01891d4e4f9aeefdf81dbb1d1
+timeCreated: 1497162317
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mentha Rapture
+  fontNames:
+  - Mentha Rapture
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

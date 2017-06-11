@@ -16,8 +16,8 @@ public class Door : MonoBehaviour
 
         if (State == State.Open)
         {
-            DoorObject.DOLocalMove(new Vector3(0f, -0.25f, 0f), 0.2f);
-            DoorObject.DOLocalRotate(Vector3.zero, 0.2f);
+            DoorObject.DOLocalMove(new Vector3(0.45f, -0.25f, -0.45f), 0f);
+            DoorObject.DOLocalRotate(new Vector3(0f, -90f, 0f), 0f);
             //anim.Play("DoorOpen");
         }
     }

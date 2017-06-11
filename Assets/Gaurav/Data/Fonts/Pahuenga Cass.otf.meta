@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 51ff4115c65a0ed42926bcbf50a31438
+timeCreated: 1497162434
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pahuenga Cass
+  fontNames:
+  - Pahuenga Cass
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

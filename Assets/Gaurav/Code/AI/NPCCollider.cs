@@ -12,14 +12,14 @@ public class NPCCollider : MonoBehaviour
         parent = GetComponentInParent<NPC>();
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        parent.OnChildCollisonEnter(collision);
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    parent.OnChildCollisonEnter(collision);
+    //}
 
-    private void OnCollisionExit(Collision collision)
-    {
-        parent.OnChildCollisonExit(collision);
-    }
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    parent.OnChildCollisonExit(collision);
+    //}
 
 }

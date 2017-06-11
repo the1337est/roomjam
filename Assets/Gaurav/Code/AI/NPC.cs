@@ -5,16 +5,22 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
 
-    public void OnChildCollisonEnter(Collision col)
+    AIPath path;
+    Seeker seeker;
+
+    private void Start()
     {
-        Debug.Log("Child collided");
+        path = GetComponent<AIPath>();
+        seeker = GetComponent<Seeker>();
+
+        path.target = null;
+
     }
 
-    public void OnChildCollisonExit(Collision col)
+    public void SetTarget(Transform target)
     {
-
+        path.target = target;
     }
-
 
 }
 

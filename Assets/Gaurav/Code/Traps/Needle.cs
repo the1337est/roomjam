@@ -34,7 +34,7 @@ public class Needle : MonoBehaviour
 
     public void Fire()
     {
-        Spikes.DOLocalMoveY(NeedleRange, (1f * Size)/ Speed).OnComplete(() =>
+        Spikes.DOLocalMoveY(0f, (1f * Size)/ Speed).OnComplete(() =>
         {
             Back();
         }
